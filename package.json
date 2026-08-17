@@ -1,0 +1,28 @@
+{
+  "name": "event-ticketing",
+  "version": "1.0.0",
+  "description": "ERC-721 event ticketing dapp (mint, own, transfer tickets) deployed on Ethereum Sepolia testnet",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "mint:sepolia": "hardhat run scripts/mint.js --network sepolia",
+    "transfer:sepolia": "hardhat run scripts/transfer.js --network sepolia",
+    "info:sepolia": "hardhat run scripts/info.js --network sepolia",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.29.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}
